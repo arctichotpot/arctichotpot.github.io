@@ -1,12 +1,4 @@
----
-title: 🍔最近易忘知识点
-date: 2019-04-17
-tags: JavaScript
-categories:
-  - notes
-  - 2019
-excerpt: 关于export,callback回调函数,localStorage的零星记录
----
+# 关于 export,callback 回调函数,localStorage 的零星记录
 
 <a name="article-title"></a>
 
@@ -36,12 +28,12 @@ callback 回调函数本质上是一个函数调用另一个函数<br />在 Java
 
 ```javascript
 function fun1(callback) {
-  const num = 12;
-  callback(num);
+  const num = 12
+  callback(num)
 }
 fun1((num) => {
-  console.log(num);
-});
+  console.log(num)
+})
 //打印结果是   22
 ```
 
@@ -62,15 +54,15 @@ fun1((num) => {
 ```javascript
 //对象
 
-const info = { name: "hou", age: 24, id: "001" };
+const info = { name: 'hou', age: 24, id: '001' }
 
 //字符串
 
-const str = "haha";
+const str = 'haha'
 
-localStorage.setItem("hou", JSON.stringify(info));
+localStorage.setItem('hou', JSON.stringify(info))
 
-localStorage.setItem("zheng", str);
+localStorage.setItem('zheng', str)
 ```
 
 <a name="0HtEC"></a>
@@ -78,9 +70,9 @@ localStorage.setItem("zheng", str);
 ## 获取
 
 ```javascript
-var data1 = JSON.parse(localStorage.getItem("hou"));
+var data1 = JSON.parse(localStorage.getItem('hou'))
 
-var data2 = localStorage.getItem("zheng");
+var data2 = localStorage.getItem('zheng')
 ```
 
 <a name="aSkNX"></a>
@@ -90,9 +82,9 @@ var data2 = localStorage.getItem("zheng");
 ```javascript
 //删除某个
 
-localStorage.removeItem("hou");
+localStorage.removeItem('hou')
 //删除所有
-localStorage.clear();
+localStorage.clear()
 ```
 
 <a name="aYQto"></a>
@@ -116,11 +108,11 @@ window.addEventListener('storage', function (e) {
 ```javascript
 //记住上次选中的审核人
 if (localStorage.length > 0) {
-  var mydata = localStorage.getItem("projectId");
+  var mydata = localStorage.getItem('projectId')
   if (mydata != null) {
-    var arr3 = mydata.split(",");
+    var arr3 = mydata.split(',')
     if (arr3[0] == me.workhourData.projectId) {
-      me.workhourData.projectManager = arr3[1];
+      me.workhourData.projectManager = arr3[1]
     }
   }
 }

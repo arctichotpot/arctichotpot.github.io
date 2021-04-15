@@ -6,20 +6,27 @@
 
 目录:
 
-- [🍜base64 图片下载](./javascript/base64图片下载.md)
-- [Git 的基本使用](./other/git使用.md)
-- [🍤JavaScript 错误处理](./javascript/JavaScript错误处理🙅.md)
-- [Node 命令行工具](./javascript/node命令行.md)
-- [react-router 用法](./Vue/react-router用法.md)
-- [🍢vue 生命周期函数](./Vue/vue生命周期函数.md)
-- [🌭Vue 项目中的权限判断](./Vue/Vue项目中的权限判断.md)
-- [🍿 关于 WEB WORKER](./javascript/WEB%20WORKER_.md)
-- [🥩 一月实践总结](./javascript/一月实践🚗.md)
-- [事件冒泡/事件捕获/事件委托](./javascript/事件冒泡与捕获.md)
-- [🍟 关于 Promise 与 async 的二三事](./javascript/关于Promise与async的二三事.md)
-- [🍕 居中的方式](./html+css/居中的方式.md)
-- [🌯 搞懂 JS 中的 var let 与 const 的区别](./javascript/搞懂JS中的%20var%20let%20与const的区别.md)
-- [🍔 最近易忘知识点](./javascript/最近易忘知识点.md)
-- [画板](./javascript/画板.md)
-- [🥓 路上的知识点(坑)](<./javascript/路上的知识点(坑)🐱_👤.md>)
-- [近期整理](./javascript/近期整理.md)
+### 2021
+
+- [近期面试整理](./前端/2021/近期面试整理.md)
+- [new 之后到底干了啥](./前端/2021/new之后到底干了啥.md)
+- [WEB WORKER](./前端/2021/WEB%20WORKER_.md)
+- [事件冒泡*事件捕获*事件委托](./前端/2021/事件冒泡_事件捕获_事件委托.md)
+- [关于 Promise 与 async 的二三事](./前端/2021/关于Promise与async的二三事.md)
+
+### 2020
+
+- [ES6 中的字符串的扩展以及新增方法](./前端/2020/ES6中的字符串的扩展以及新增方法.md)
+- [JavaScript 错误处理 🙅](./前端/2020/JavaScript错误处理🙅.md)
+- [Vue 项目中的权限判断](./前端/2020/Vue项目中的权限判断.md)
+- [关于 export,callback 回调函数,localStorage 的零星记录](./前端/2020/关于export,callback回调函数,localStorage的零星记录.md)
+- [关于对象的一些零散知识](./前端/2020/关于对象的一些零散知识.md)
+- [关于循环](./前端/2020/关于循环.md)
+- [剩余\_扩展运算符](./前端/2020/剩余_扩展运算符.md)
+- [居中的方式](./前端/2020/居中的方式.md)
+- [搞懂 JS 中的 var let 与 const 的区别](./前端/2020/搞懂JS中的%20var%20let%20与const的区别.md)
+- [箭头函数](./前端/2020/箭头函数.md)
+- [解构赋值](./前端/2020/解构赋值.md)
+- [路上的知识点(坑)🐱_👤](<./前端/2020/路上的知识点(坑)🐱_👤.md>)
+- [零散知识记录](./前端/2020/零散知识记录.md)
+- [居中的方式](./前端/2020/)
