@@ -1,12 +1,3 @@
 # Blog
 
-记录学习
-
-目录:
-
-- [Vue](./Vue/readme.md)
-- [CSS](./CSS/readme.md)
-- [Node](./Node/readme.md)
-- [ES6](./ES6/readme.md)
-- [网络](./network/readme.md)
-- [其他](./other/readme.md)
+我的博客,记录学习
