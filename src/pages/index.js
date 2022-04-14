@@ -13,32 +13,31 @@ function HomepageHeader () {
   const { siteConfig } = useDocusaurusContext();
   const intervalRef = useRef({});
 
-  const [magicName, setMagicName] = useState("你好!Hello!こんにちは!Hallo!Привет!Bonjour!Saluton!");
-  const name = useTypewriter(magicName);
+  const [text, setText] = useState("你好!Hello!こんにちは!Hallo!Привет!Bonjour!Saluton!");
+  const content = useTypewriter(text);
 
   useEffect(
     () => {
       intervalRef.current = setInterval(() => {
-        // index = index + 1 > 2 ? 0 : ++index + 1;
         index = index > 2 ? 0 : ++index;
-        setMagicName(MagicOcean[index]);
+        setText(MagicOcean[index]);
       }, 5000);
       return function clear () {
         clearInterval(intervalRef.current);
       };
     },
-    [magicName]
+    [text]
   );
 
 
   return (
     <header className={clsx('hero--primary', styles.heroBanner)}>
       <div className="container">
-        <div className={styles.hello_font}>     {name}</div>
-        <div style={{ marginTop: "10rem" }}>
+        <div style={{ marginTop: "2rem" }}>
           <h1 className={clsx('hero__title', styles.container_title)}>{siteConfig.title}</h1>
           <p className={clsx('hero__subtitle', styles.container_subtitle)}>{siteConfig.tagline}</p>
         </div>
+        {/* <div className={styles.hello_font}>     {content}</div> */}
       </div>
     </header>
   );
@@ -48,7 +47,6 @@ export default function Home () {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />

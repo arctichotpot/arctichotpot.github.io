@@ -5,14 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'HOTPOT的网上冲浪指南',
-  tagline: 'I feel better when I surf the web',
+  title: 'HOTPOT的网上冲浪指南🌊',
+  tagline: '人有权力选择自己的环境,也有能力改变自己的环境!',
   url: 'http://github.com/arctichotpot/',
   baseUrl: '/blog/',
   deploymentBranch: "gh-pages",
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.png',
+  favicon: 'img/logo.svg',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
 
@@ -31,7 +31,7 @@ const config = {
           // routeBasePath: "/",
           // path: "./blog",
           showReadingTime: true,
-          blogSidebarCount: 5,
+          blogSidebarCount: 'ALL',
           blogSidebarTitle: "Recent posts",
         },
         theme: {
@@ -44,6 +44,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      defaultMode: 'dark',
       hideableSidebar: false,
       metadata: [
         {
@@ -58,22 +59,27 @@ const config = {
         title: 'HOTPOT的网上冲浪指南',
         logo: {
           // alt: 'HOTPOT的网上冲浪指南',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
         },
         items: [
           {
             type: "search",
             position: "right",
           },
-          { to: '/blog/blog', label: '💻Blog', position: 'right' },
+          { to: '/blog/blog', label: '💻Blog', position: 'left' },
           {
             type: 'doc',
             docId: 'introduction',
-            position: 'right',
+            position: 'left',
             label: '📒笔记',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/blog/blog/about',
+            label: '📝About',
+            position: 'right',
+          },
+          {
+            href: 'http://github.com/arctichotpot/',
             label: 'GitHub',
             position: 'right',
           },
