@@ -45,6 +45,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       defaultMode: 'dark',
+      disableSwitch: false,
       hideableSidebar: false,
       metadata: [
         {

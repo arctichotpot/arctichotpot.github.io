@@ -3,6 +3,9 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import Developer from "@site/static/img/Developer.gif"
+import Backgroud from "@site/static/img/bg.jpg"
+
 import useTypewriter from 'react-typewriter-hook/build/useTypewriter';
 import SnowCanvas from "../components/SnowCanvas/SnowCanvas"
 
@@ -17,8 +20,8 @@ function HomepageHeader () {
 
   return (
     <header className={clsx('hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <div style={{ marginTop: "2rem" }}>
+      <div className="container" >
+        <div style={{ marginTop: "7rem" }}>
           <h1 className={clsx('hero__title', styles.container_title)}>{siteConfig.title}</h1>
           <p className={clsx('hero__subtitle', styles.container_subtitle)}>{siteConfig.tagline}</p>
         </div>
