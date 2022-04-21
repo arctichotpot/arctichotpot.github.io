@@ -3,11 +3,8 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import Developer from "@site/static/img/Developer.gif"
-import Backgroud from "@site/static/img/bg.jpg"
 
 import useTypewriter from 'react-typewriter-hook/build/useTypewriter';
-import SnowCanvas from "../components/SnowCanvas/SnowCanvas"
 
 let index = 0;
 
@@ -37,7 +34,6 @@ export default function Home () {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
-      {/* <SnowCanvas /> */}
     </Layout>
   );
 }
