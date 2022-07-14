@@ -2,6 +2,7 @@ import setSideBar from "./setSideBar"
 
 
 export default {
+    base: '/blog/',
     lang: 'en-US',
     title: '个人网上冲浪指南🏄‍♂️',
     description: 'my blog',
