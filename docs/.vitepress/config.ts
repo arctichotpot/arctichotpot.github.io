@@ -16,7 +16,6 @@ export default defineConfig({
 
         sidebar: {
             '/articles/': setSideBar('articles'),
-            '/guide/': setSideBar('guide')
         },
 
         socialLinks: [
