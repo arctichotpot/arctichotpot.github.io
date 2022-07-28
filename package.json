@@ -9,6 +9,7 @@
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
     "vitepress": "^1.0.0-alpha.4",
     "vue": "^3.2.37"
   },

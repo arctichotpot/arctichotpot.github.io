@@ -8,7 +8,6 @@ export interface SidebarGroup {
     text?: string
     items?: SidebarItem[]
     link?: string
-
     /**
      * If `true`, toggle button is shown.
      *

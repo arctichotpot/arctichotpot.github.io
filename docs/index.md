@@ -8,8 +8,8 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/
+      link: /articles/
     - theme: alt
       text: View on GitHub
-      link: https://github.com
+      link: https://github.com/arctichotpot/blog
 ---

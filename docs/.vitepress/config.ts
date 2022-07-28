@@ -1,12 +1,15 @@
+import { defineConfig } from "vitepress"
 import setSideBar from "./setSideBar"
 
 
-export default {
+
+export default defineConfig({
     base: '/blog/',
     lang: 'en-US',
     title: '个人网上冲浪指南🏄‍♂️',
     description: 'my blog',
     lastUpdated: true,
+
     themeConfig: {
 
         nav: nav(),
@@ -25,12 +28,12 @@ export default {
             copyright: 'Copyright © 2022-present ArcticHotpot'
         },
     }
-}
+})
 
 function nav() {
     return [
         { text: 'Articles', link: '/articles/' },
-        { text: 'About', link: '/guide/' },
+        { text: 'About', link: '/about/' },
         {
             text: 'Link',
             items: [

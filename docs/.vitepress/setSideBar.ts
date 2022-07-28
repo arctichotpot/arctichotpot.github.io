@@ -1,19 +1,23 @@
 import fs from "fs"
 import { resolve } from "path"
-import { SidebarGroup, SidebarItem } from "./theme/types/sidebar"
+import { SidebarItem } from "./theme/types/sidebar"
 
+// 文件根目录
 const DIR_PATH = resolve(__dirname, '../')
+// 白名单,过滤不是文章的文件和文件夹
 const WHITE_LIST = ['index.md', '.vitepress']
 
-
+// 判断是否是文件夹
 const isDirectory = (path: string): boolean => fs.lstatSync(path).isDirectory()
-
+// 是否包含
 const intersections = <T>(arr1: T[], arr2: T[]): T[] => Array.from(new Set(arr1.filter(item => !new Set(arr2).has(item))))
 
+// 生成列表
 
-const genList = (params: string[], path: string, pathname: string): SidebarGroup[] => {
+// params :文件夹列表 path:路径 pathname 构建地址的路径
+const genList = (params: string[], path: string, pathname: string) => {
 
-    const res: SidebarGroup[] = []
+    const res: any[] = []
 
     for (let file in params) {
 
