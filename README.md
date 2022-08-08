@@ -1,6 +1,6 @@
 ## 个人网上冲浪指南🌊
 
- vitepress新的默认主题挺好看,随即切换过来,主要是受不了了Docusaurus 了,webpack构建太慢了
+ vitepress新的默认主题挺漂亮,主要是受够了Docusaurus的打包了
 
  现在先迁移到这上面,到时候开始完善下主题
 
@@ -11,7 +11,7 @@
 
 ## A personal guide to surfing the web 🌊
 
-The new default theme of vitepress is quite nice, I switched over immediately, mainly because I can't stand Docusaurus anymore, the webpack build is too slow.
+The new default theme for vitepress is very nice, and I've had enough of Docusaurus' slow packaging
 
  Now migrate to this first, when the time to start improving the theme
 

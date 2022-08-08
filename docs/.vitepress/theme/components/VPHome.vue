@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import VPHomeHero from './VPHomeHero.vue'
 import VPHomeFeatures from './VPHomeFeatures.vue'
+
 </script>
 
 <template>
   <div class="VPHome">
+
     <slot name="home-hero-before" />
     <VPHomeHero />
     <slot name="home-hero-after" />

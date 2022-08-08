@@ -16,10 +16,14 @@ defineProps<{
   image?: DefaultTheme.ThemeableImage
   actions?: HeroAction[]
 }>()
+
+
+
 </script>
 
 <template>
-  <div class="VPHero" :class="{ 'has-image': image }">
+  <!-- :class="{ 'has-image': image }" -->
+  <div class="VPHero">
     <div class="container">
       <div class="main">
         <h1 v-if="name" class="name">
@@ -35,12 +39,12 @@ defineProps<{
         </div>
       </div>
 
-      <div v-if="image" class="image">
+      <!-- <div v-if="image" class="image">
         <div class="image-container">
           <div class="image-bg" />
           <VPImage class="image-src" :image="image" />
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -135,7 +139,7 @@ defineProps<{
 
   .name,
   .text {
-    max-width: 576px;
+    max-width: 800px;
     line-height: 56px;
     font-size: 48px;
   }
