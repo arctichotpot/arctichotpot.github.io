@@ -34,17 +34,17 @@ defineProps<{
 
         <div v-if="actions" class="actions">
           <div v-for="action in actions" :key="action.link" class="action">
-            <VPButton tag="a" size="medium" :theme="action.theme" :text="action.text" :href="action.link" />
+            <VPButton tag="a" size="medium" :theme="action.theme" :text="action.name" :href="action.link" />
           </div>
         </div>
       </div>
 
-      <!-- <div v-if="image" class="image">
+      <div v-if="image" class="image">
         <div class="image-container">
-          <div class="image-bg" />
           <VPImage class="image-src" :image="image" />
         </div>
-      </div> -->
+      </div>
+
     </div>
   </div>
 </template>
@@ -52,7 +52,7 @@ defineProps<{
 <style scoped>
 .VPHero {
   margin-top: calc(var(--vp-nav-height) * -1);
-  padding: calc(var(--vp-nav-height) + 48px) 24px 48px;
+  padding: calc(var(--vp-nav-height) + 100px) 24px 48px;
 }
 
 @media (min-width: 640px) {
@@ -63,12 +63,13 @@ defineProps<{
 
 @media (min-width: 960px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + 80px) 64px 64px;
+    padding: calc(var(--vp-nav-height) + 300px) 64px 64px;
   }
 }
 
 .container {
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 0 auto;
   max-width: 1152px;
@@ -81,6 +82,8 @@ defineProps<{
 }
 
 .main {
+  /* max-width: calc((100% / 3) * 2); */
+  /* width: calc((100% / 4) * 2); */
   position: relative;
   z-index: 10;
   order: 2;
@@ -111,10 +114,10 @@ defineProps<{
 
 .name,
 .text {
-  max-width: 392px;
+  /* max-width: 392px; */
   letter-spacing: -0.4px;
   line-height: 40px;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 700;
   white-space: pre-wrap;
 }
@@ -146,6 +149,10 @@ defineProps<{
 }
 
 @media (min-width: 960px) {
+
+  .main {
+    max-width: 100%;
+  }
 
   .name,
   .text {
@@ -205,6 +212,10 @@ defineProps<{
 }
 
 @media (min-width: 640px) {
+  .main {
+    max-width: 100%;
+  }
+
   .actions {
     padding-top: 32px;
   }
@@ -246,10 +257,12 @@ defineProps<{
   margin: 0 auto;
   width: 320px;
   height: 320px;
+  object-fit: cover;
 }
 
 @media (min-width: 640px) {
   .image-container {
+    margin: 0 auto;
     width: 392px;
     height: 392px;
   }
@@ -258,6 +271,7 @@ defineProps<{
 @media (min-width: 960px) {
   .image-container {
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -302,12 +316,13 @@ defineProps<{
 
 @media (min-width: 640px) {
   :deep(.image-src) {
-    max-width: 256px;
+    max-width: 226px;
   }
 }
 
 @media (min-width: 960px) {
   :deep(.image-src) {
+    object-fit: cover;
     max-width: 320px;
   }
 }

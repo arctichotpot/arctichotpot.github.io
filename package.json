@@ -9,11 +9,11 @@
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "vitepress": "^1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "autoprefixer": "^10.4.9",
+    "vitepress": "^1.0.0-alpha.13",
+    "vue": "^3.2.39"
   },
   "dependencies": {
-    "@types/node": "^18.0.3"
+    "@types/node": "^18.7.17"
   }
 }

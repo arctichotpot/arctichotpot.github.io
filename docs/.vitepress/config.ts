@@ -6,7 +6,7 @@ import setSideBar from "./setSideBar"
 export default defineConfig({
     base: '/blog/',
     lang: 'en-US',
-    title: '个人网上冲浪指南🏄‍♂️',
+    title: 'WIKI🏄‍♂️',
     description: 'my blog',
     lastUpdated: true,
 

@@ -7,6 +7,7 @@ import VPIconMoon from './icons/VPIconMoon.vue'
 const toggle = typeof localStorage !== 'undefined' ? useAppearance() : () => { }
 
 function useAppearance() {
+
   const query = window.matchMedia('(prefers-color-scheme: dark)')
   const classList = document.documentElement.classList
 

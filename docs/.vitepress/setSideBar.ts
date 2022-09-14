@@ -47,7 +47,6 @@ export default (pathname: string) => {
 
     const dirPath = resolve(DIR_PATH, pathname)
     const files = fs.readdirSync(dirPath)
-
     const items = intersections(files, WHITE_LIST)
 
     return genList(items, dirPath, pathname)

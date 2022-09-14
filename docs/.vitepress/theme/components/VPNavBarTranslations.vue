@@ -8,11 +8,7 @@ const { theme } = useData()
 </script>
 
 <template>
-  <VPFlyout
-    v-if="theme.localeLinks"
-    class="VPNavBarTranslations"
-    :icon="VPIconLanguages"
-  >
+  <VPFlyout v-if="theme.localeLinks" class="VPNavBarTranslations" :icon="VPIconLanguages">
     <div class="items">
       <p class="title">{{ theme.localeLinks.text }}</p>
 

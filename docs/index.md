@@ -6,14 +6,15 @@ hero:
   text: What you love is your life
   # tagline: 你所热爱的就是你的生活
   image:
-    src: /background.jpg
+    src: /dashboard.jpg
     alt: VitePress
 
-  actions:
-    - theme: brand
-      text: Get Started
-      link: /articles/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/arctichotpot/blog
----
+#   actions:
+#     - name: LiuLin
+#     - theme: brand
+#       text: Get Started
+#       link: /articles/
+#     - theme: alt
+#       text: View on GitHub
+#       link: https://github.com/arctichotpot/blog
+# ---
