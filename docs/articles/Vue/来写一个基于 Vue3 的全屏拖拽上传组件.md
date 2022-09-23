@@ -48,7 +48,7 @@ ele.addEventListener('dragenter', (e) => {
 
 先看一下效果,此时我这里是设置的仅能上传 png 与 jpg
 
-![upload.gif](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bbad32ae938f4f3790c842ea68207df7~tplv-k3u1fbpfcp-watermark.image?)
+![upload.gif](/js/vue3-upload.gif)
 使用:
 
 ```javascript

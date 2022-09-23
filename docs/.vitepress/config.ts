@@ -16,8 +16,7 @@ export default defineConfig({
 
         sidebar: {
             '/articles/': setSideBar('articles'),
-            '/wiki/': setSideBar('wiki'),
-            '/leetcode/': setSideBar('leetcode'),
+            '/wiki/': setSideBar('wiki/'),
         },
 
         socialLinks: [
@@ -36,17 +35,7 @@ function nav() {
         { text: 'Articles📔', link: '/articles/' },
         {
             text: 'Wiki📚',
-            items: [
-                {
-                    text: 'Wiki',
-                    link: '/wiki/'
-                },
-                {
-                    text: 'LeetCode',
-                    link: '/leetcode/'
-                },
-
-            ],
+            link: '/wiki/'
         },
         { text: 'About📃', link: '/about/' },
         {

@@ -67,21 +67,20 @@ Worker 完成任务以后，主线程就可以把它关掉。
 > worker.terminate()
 > ```
 
-````
 
 
 
-<a name="8dde806b"></a>
+
 ### web worker线程
 
 Worker 线程内部需要有一个监听函数，监听`message`事件。
 
 
-> ```javascript
+ ```javascript
 self.addEventListener('message', function (e) {
   self.postMessage('You said: ' + e.data);
 }, false);
-````
+```
 
 除了使用`self.addEventListener()`指定监听函数，也可以使用`self.onmessage`指定。监听函数的参数是一个事件对象，它的`data`属性包含主线程发来的数据。`self.postMessage()`方法用来向主线程发送消息。
 
