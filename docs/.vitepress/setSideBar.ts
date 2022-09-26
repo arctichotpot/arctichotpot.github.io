@@ -9,7 +9,7 @@ const WHITE_LIST = ['index.md', '.vitepress']
 
 // 判断是否是文件夹
 const isDirectory = (path: string): boolean => fs.lstatSync(path).isDirectory()
-// 是否包含
+// 取差值
 const intersections = <T>(arr1: T[], arr2: T[]): T[] => Array.from(new Set(arr1.filter(item => !new Set(arr2).has(item))))
 
 // 生成列表
