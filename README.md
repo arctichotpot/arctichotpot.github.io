@@ -1,21 +1,15 @@
-## 个人网上冲浪指南🌊
+## 个人网上冲浪指南 🌊
 
- vitepress新的默认主题挺漂亮,主要是受够了Docusaurus的打包了
+个人博客,用的 vitepress 构建,目前只改了首页部分样式以及自动生成侧边栏
 
- 现在先迁移到这上面,到时候开始完善下主题
+目前要做的:
 
- 目前现在只更改了侧边栏,可以生成侧边栏,然后侧边栏跳转支持一级菜单跳转
- 
- 待开发...
-
+1. 看完 Vuejs 设计与实现并写读后感
+2. 补充自己深入学习 JavaScript 的时候的一些理解
+3. 编写前端 Debug 方法
+4. 完善职业规划
+5. 刷题...
 
 ## A personal guide to surfing the web 🌊
 
-The new default theme for vitepress is very nice, and I've had enough of Docusaurus' slow packaging
-
- Now migrate to this first, when the time to start improving the theme
-
- now only change the sidebar, you can generate a sidebar, and then the sidebar jump to support a menu jump
-
-
-To be developed...
+personal blog, built with vitepress, currently only changed the front page part of the style and automatic generation of sidebars

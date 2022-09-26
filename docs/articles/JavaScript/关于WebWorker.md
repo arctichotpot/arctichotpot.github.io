@@ -1,10 +1,8 @@
-
 ## 1.web worker 概述
 
 Web Worker 作用是为 JavaScript 创造多线程环境，允许主线程创建 Worker 线程，将一些任务分配给后者运行。在主线程运行的同时，Worker 线程在后台运行，两者互不干扰。等到 Worker 线程完成计算任务，再把结果返回给主线程。这样的好处是，一些计算密集型或高延迟的任务，被 Worker 线程负担了，主线程（通常负责 UI 交互）就会很流畅，不会被阻塞或拖慢。
 
 Worker 线程一旦新建成功，就会始终运行，不会被主线程上的活动（比如用户点击按钮、提交表单）打断。这样有利于随时响应主线程的通信。但是，这也造成了 Worker 比较耗费资源，不应该过度使用，而且一旦使用完毕，就应该关闭。
-
 
 ## 2.注意要点
 
@@ -30,9 +28,7 @@ Worker 线程不能执行`alert()`方法和`confirm()`方法，但可以使用 X
 
 Worker 线程无法读取本地文件，即不能打开本机的文件系统（`file://`），它所加载的脚本，必须来自网络。
 
-
 ## 3.用法
-
 
 ### 主线程
 
@@ -67,19 +63,18 @@ Worker 完成任务以后，主线程就可以把它关掉。
 > worker.terminate()
 > ```
 
-
-
-
-
-### web worker线程
+### web worker 线程
 
 Worker 线程内部需要有一个监听函数，监听`message`事件。
 
-
- ```javascript
-self.addEventListener('message', function (e) {
-  self.postMessage('You said: ' + e.data);
-}, false);
+```javascript
+self.addEventListener(
+  'message',
+  function (e) {
+    self.postMessage('You said: ' + e.data)
+  },
+  false
+)
 ```
 
 除了使用`self.addEventListener()`指定监听函数，也可以使用`self.onmessage`指定。监听函数的参数是一个事件对象，它的`data`属性包含主线程发来的数据。`self.postMessage()`方法用来向主线程发送消息。

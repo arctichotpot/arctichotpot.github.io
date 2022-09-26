@@ -196,9 +196,7 @@ try {
 这时会执行内层的finally代码块，然后抛出错误，被外层的catch捕获。
 ```
 
-
 # JavaScript 原生错误类型
-
 
 ### 1.SyntaxError 对象
 
@@ -215,7 +213,6 @@ console.log 'hello');
 ```
 
 上面代码的错误，都是在语法解析阶段就可以发现，所以会抛出`SyntaxError`。第一个错误提示是“token 非法”，第二个错误提示是“字符串不符合要求”。
-
 
 ### 2.ReferenceError 对象
 
@@ -237,7 +234,6 @@ console.log() = 1
 
 上面代码对函数`console.log`的运行结果赋值，结果引发了`ReferenceError`错误。
 
-
 ### 3.RangeError 对象
 
 `RangeError`对象是一个值超出有效范围时发生的错误。主要有几种情况，一是数组长度为负数，二是`Number`对象的方法参数超出范围，以及函数堆栈超过最大值。
@@ -256,7 +252,6 @@ new Array(-1)
 
 ### ![](https://cdn.nlark.com/yuque/0/2020/png/514813/1605834029863-cadc914d-eafb-4fae-9112-c4bc8afdcd72.png#align=left&display=inline&height=281&margin=%5Bobject%20Object%5D&originHeight=281&originWidth=1084&size=0&status=done&style=none&width=1084)
 
-
 ### 4.TypeError 对象
 
 `TypeError`对象是变量或参数不是预期类型时发生的错误。比如，对字符串、布尔值、数值等原始类型的值使用`new`命令，就会抛出这种错误，因为`new`命令的参数应该是一个构造函数。
@@ -272,7 +267,6 @@ obj.unknownMethod()
 
 上面代码的第二种情况，调用对象不存在的方法，也会抛出`TypeError`错误，因为`obj.unknownMethod`的值是`undefined`，而不是一个函数。
 
-
 ### 5.URIError 对象
 
 `URIError`对象是 URI 相关函数的参数不正确时抛出的错误，主要涉及`encodeURI()`、`decodeURI()`、`encodeURIComponent()`、`decodeURIComponent()`、`escape()`和`unescape()`这六个函数。
@@ -281,7 +275,6 @@ obj.unknownMethod()
 decodeURI('%2')
 // URIError: URI malformed
 ```
-
 
 ### 6.EvalError 对象
 

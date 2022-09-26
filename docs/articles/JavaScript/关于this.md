@@ -11,15 +11,15 @@
 
 ```javascript
 function foo() {
-	var a = 2;
-	this.bar();
+  var a = 2
+  this.bar()
 }
 
 function bar() {
-	console.log( this.a );
+  console.log(this.a)
 }
 
-foo(); //undefined
+foo() //undefined
 ```
 
 当我要查找`this.a`的值时候是找不到的,所以*你不能使用 this 引用在词法作用域中查找东西*
@@ -38,32 +38,29 @@ foo(); //undefined
 new 绑定:
 
 ```javascript
-function Foo(arg){
-	this.a = arg
+function Foo(arg) {
+  this.a = arg
 }
 
 const foo = new Foo(2)
 
 console.log(foo.a) // 2
-
 ```
 
 明确绑定:
 
 ```javascript
-
-function foo(){
-	this.a = 1
+function foo() {
+  this.a = 1
 }
 
 const obj = {
-	a:21
+  a: 21,
 }
 
-foo.call(obj,32)
+foo.call(obj, 32)
 
-console.log(obj.a)  // 1
-
+console.log(obj.a) // 1
 ```
 
 隐含绑定:
