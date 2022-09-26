@@ -23,5 +23,4 @@ class Me extends Person {
 
 }
 
-
 ```

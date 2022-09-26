@@ -8,7 +8,7 @@ export default defineConfig({
     lang: 'en-US',
     title: 'WIKI🏄‍♂️',
     description: 'my blog',
-    lastUpdated: true,
+    // lastUpdated: true,
 
     themeConfig: {
 

@@ -14,6 +14,7 @@ const datetime = ref('')
 onMounted(() => {
   watchEffect(() => {
     datetime.value = date.value.toLocaleString(window.navigator.language)
+    console.log(datetime.value)
   })
 })
 </script>
