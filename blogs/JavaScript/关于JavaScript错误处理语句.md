@@ -1,4 +1,7 @@
-# JavaScript 错误处理语句
+---
+title : JavaScript错误处理语句
+date : 2023-07-11
+---
 
 - **try** 语句测试代码块的错误。
 - **catch** 语句处理错误。

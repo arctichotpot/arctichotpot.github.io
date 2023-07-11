@@ -1,4 +1,7 @@
-# 关于Promise与async的二三事
+---
+title : 关于Promise与async的二三事
+date : 2023-7-11
+---
 
 > > 最近关于 Promise 看了好一些文章来阐述用途,再加上异步编程和 async 与 await 的用法弄的属实头大,但是看了好几遍之后感觉有点上道了,然后抓紧吧我知道的理解的记录下来了,我在这里只是阐述我对 Promise 和 async 的一些理解,关于 promise 和 async 的更多细节可以去查看阮一峰老师的[ES6 入门](https://es6.ruanyifeng.com/#docs/async),或者边城老师的[理解 JavaScript 的 async/await](https://segmentfault.com/a/1190000007535316)
 
