@@ -1,9 +1,12 @@
 import { defineUserConfig } from 'vuepress'
 import recoTheme from 'vuepress-theme-reco'
+import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   title: 'WIKI',
   description: 'my internet guide',
+  bundler: viteBundler({
+  }),
   theme: recoTheme({
     primaryColor: '#1abc9c',
     style: '@vuepress-reco/style-default',
