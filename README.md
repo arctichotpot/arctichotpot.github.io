@@ -11,11 +11,10 @@ bannerBrand:
     - { text: Start, link: '/categories/JavaScript/1/' }
     - { text: Introduce, link: '/blogs/guide/introduce' }
   socialLinks:
-    - { icon: 'LogoGithub', link: 'https://github.com/vuepress-reco/vuepress-theme-reco' }
+    - { icon: 'LogoGithub', link: 'https://github.com/acrtichotpot' }
 blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/acrtichotpot' }
-    - { icon: 'LogoEmail', link: 'iambrysonlau@gmail.com' }
 isShowTitleInHome: true
 actionText: About
 actionLink: /views/other/about
