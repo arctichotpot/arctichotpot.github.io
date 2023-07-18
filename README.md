@@ -12,7 +12,6 @@ bannerBrand:
     - { text: Introduce, link: '/blogs/guide/introduce' }
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/vuepress-reco/vuepress-theme-reco' }
-    - { icon: 'Email', link: '/2240379431@qq.com' }
 blog:
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/acrtichotpot' }
