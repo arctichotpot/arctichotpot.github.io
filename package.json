@@ -1,18 +1,32 @@
 {
-  "name": "vuepress-theme-reco-demo",
-  "version": "2.0.0",
-  "description": "Demo for vuepress-theme-reco@2.x.",
-  "repository": "git@github.com:recoluan/vuepress-theme-reco-demo.git",
-  "author": "reco_luan <recoluan@outlook.com>",
-  "license": "MIT",
+  "name": "blogster-newspaper",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "vuepress dev .",
-    "start": "vuepress dev .",
-    "build": "vuepress build ."
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-beta.64",
-    "vuepress": "2.0.0-beta.63",
-    "vuepress-theme-reco": "2.0.0-beta.66"
+    "@astrojs/prism": "^1.0.2",
+    "@astrojs/rss": "^2.0.0",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/tailwind": "^2.1.3",
+    "@markdoc/markdoc": "^0.2.1",
+    "@tailwindcss/typography": "^0.5.9",
+    "astro": "^1.9.2",
+    "astro-markdoc-renderer": "0.0.1-alpha.1",
+    "globby": "^13.1.3",
+    "gray-matter": "^4.0.3",
+    "slugify": "^1.6.5",
+    "tailwindcss": "^3.2.4",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "prettier-plugin-astro": "^0.7.2",
+    "typescript": "^4.9.4"
   }
 }
